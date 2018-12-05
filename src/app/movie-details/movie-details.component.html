@@ -1,0 +1,17 @@
+<div class="col m7 s12">
+  <h4 class="fade-in-right">{{movie.title}}</h4>
+  <div class="row">
+    <div class="col m3 fade-in-right slower">
+      {{movie.release_date}}
+    </div>
+  </div>
+  <div class="row">
+    <p class="flow-text col s12 fade-in-left slow">
+     {{movie.overview}}
+    </p>
+  </div>
+</div>
+
+<div class="col m5">
+  <img [src]="movie.posterUrl" [alt]="movie.title" class="movie-poster fade-in-left">
+</div>

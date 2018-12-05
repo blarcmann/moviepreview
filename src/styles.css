@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{
+    color:rgb(233, 230, 233);
+    /* background: linear-gradient(#000 10%, #333 20%, #000 30%); */
+    background: rgba(0, 1, 2, 0.822);
+    background-size: 100% 50px;
+}
+app-root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.movie-poster{
+    width: 100%;
+    opacity: 0;
+    
+}
+
+.footer-copyright p span {
+    font-size: 14px;
+}
+.search-btn{
+    cursor: pointer;
+    margin-top:15px;
+
+}
+.search-input{
+    height: 4rem !important;
+    top:15px;
+    font-size: 2rem !important;
+}
+
+.page-footer{
+    background-color: #333 !important;
+}
+
+.movie{
+    opacity: 0;
+    font-size: 15px;
+    line-height: 2.1;
+    font-weight: 300;
+    cursor: pointer;
+    animation: .75s ease-in slide-in;
+    animation-fill-mode: forwards;
+}
+
+.card .card-title {
+    font-size: 17px !important;
+    line-height: 12;
+}
+.card .card-content {
+    padding: 10px !important;
+    border-radius: 4px 0 0 6px;
+}
+p {
+    font-size: 14px !important;
+}
+
+@media (min-width: 1024px) {
+    p {
+        font-size: 15px !important;
+    }
+}
+@keyframes slide-in{
+    0%{
+        opacity:0;
+        transform:translateY(-15px) 
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}

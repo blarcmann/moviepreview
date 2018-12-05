@@ -1,0 +1,19 @@
+<div class="col s12">
+    <input 
+        type="text" 
+        placeholder="Search here" 
+        class="search-input"
+        [(ngModel)]="search" 
+        (change)="searchRelated($event)"
+        (input)="search$.next(search)">
+    <div class="row">
+        <app-each-movie 
+        *ngFor="let movie of searchResults; let i = index" 
+        [movie]="movie"
+        [index]="i"
+        (click)="setCurrentMovie(movie)"
+        ></app-each-movie>
+    </div>
+    <h4 *ngIf="!fetching && searchResults.length == 0 && search.length > 0"  
+        [ngStyle]="{'text-align': 'center'}">oooops <:(> ...No result found for {{search}}</h4>
+</div>
