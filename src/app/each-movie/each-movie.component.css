@@ -2,3 +2,28 @@
     height: 210px;
     color: #ffffff;
 }
+
+.card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 24px;
+    font-size: 23px;
+}
+
+.card-over {
+    font-size: 14px;
+    background: rgb(252, 255, 247);
+    color: rgb(24, 36, 7)
+}
+
+.card {
+    height: 340px !important;
+    max-height: 350px !important;
+}
+
+.card-ppt {
+    line-height: 1.45 !important;
+}

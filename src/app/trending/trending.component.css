@@ -1,0 +1,16 @@
+  .under-line {
+    border-bottom: 1px solid #20d376;
+    margin: -3px 63% 10px 12%;
+    animation: 1.30s ease-in slide-in;
+  }
+
+  @media (max-width: 600px) {
+    .under-line {
+        margin: -4px 23% 13px 29%;
+    }
+}
+
+.card.card-trends {
+    height: 340px !important;
+    max-height: 350px !important;
+}

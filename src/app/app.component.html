@@ -1,11 +1,40 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+  <div class="navbar-fixed">
+    <nav class="nav-container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo dancing-logo center">
+          <span>X</span>
+          <span>X</span>
+          <span>X</span>
+          <span>X</span>
+          <span>X</span>
+          <span>X</span>
+          <span>X</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>
 <div class="container">
-  <app-header *ngIf="currentMovie" (startNewSearch)="startNewSearch()" ></app-header>
+  <app-header *ngIf="currentMovie" (startNewSearch)="startNewSearch()"></app-header>
   <main>
-    <div class="container">
-      <app-movie-details class="row" *ngIf="currentMovie"   [movie]="currentMovie" ></app-movie-details>
-      <app-search-movie class="row" *ngIf="!currentMovie"  ></app-search-movie>
+    <div class="container-fluid">
+      <app-movie-details class="row" *ngIf="currentMovie" [movie]="currentMovie"></app-movie-details>
+      <app-search-movie class="row" *ngIf="!currentMovie"></app-search-movie>
     </div>
   </main>
+  <div class="container">
+    <div class="row">
+      <div class="trending-head">
+        <h3>Trending</h3>
+        <div class="under-line"></div>
+      </div>
+      <app-trending *ngFor="let trend of trendResults;" [trend]="trend"></app-trending>
+    </div>
+    <div class="row">
+      <app-best-rated></app-best-rated>
+    </div>
+  </div>
   <app-footer></app-footer>
 </div>

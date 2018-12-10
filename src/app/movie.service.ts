@@ -12,6 +12,7 @@ export class MovieService {
   private apiKey = 'ae6e221eb7bee897bb46839516411b94';
   private baseurl = 'https://api.themoviedb.org/3/search/movie';
   private baseConfigurationUrl = 'https://api.themoviedb.org/3/configuration';
+  private trendingbaseUrl = 'https://api.themoviedb.org/3/trending/all/week';
   private imageBaseUrl = '';
   private imageSizes: { backdrop?: string[], poster?: string[] } = {};
 
@@ -35,7 +36,17 @@ export class MovieService {
   //       };
   //     });
   // }
-
+  getTrending() {
+    const params = new HttpParams().set('api_key', this.apiKey);
+    return this.http.get<any>(this.trendingbaseUrl, {params})
+      .map(res =>
+          res.results.map((result: Movie) => {
+            return {
+              ...result
+            };
+          })
+        );
+  }
 
 searchMovie(query: string) {
   const params = new HttpParams().set('api_key', this.apiKey).set('query', query);

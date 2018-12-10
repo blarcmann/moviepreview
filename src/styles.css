@@ -29,29 +29,35 @@ main {
     margin-top:15px;
 
 }
+h3 {
+    margin: 1.9466666667rem 0 0 0 !important;
+}
 .search-input{
     height: 4rem !important;
     top:15px;
-    font-size: 2rem !important;
+    color: greenyellow !important;
+    font-size: 1.2rem !important;
+    padding: inherit 10px !important;
 }
 
 .page-footer{
-    background-color: #333 !important;
+    background-color: rgb(116, 153, 61) !important;
 }
 
 .movie{
     opacity: 0;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 2.1;
-    font-weight: 300;
+    /* font-weight: 300; */
     cursor: pointer;
     animation: .75s ease-in slide-in;
     animation-fill-mode: forwards;
 }
 
-.card .card-title {
-    font-size: 17px !important;
-    line-height: 12;
+.card .search-title {
+    font-size: 16px !important;
+    color: rgb(176, 251, 63) !important;
+    text-shadow: 0px 1px 0px rgb(116, 153, 61);
 }
 .card .card-content {
     padding: 10px !important;
@@ -60,6 +66,20 @@ main {
 p {
     font-size: 14px !important;
 }
+
+input {
+    border: none !important;
+    border-bottom: 1px solid rgb(116, 153, 61) !important;
+}
+.foot-text a {
+    color: rgb(223, 253, 178);
+}
+
+.footer-copyright p  span {
+    color: rgb(216, 41, 10);
+}
+
+
 
 @media (min-width: 1024px) {
     p {
@@ -74,5 +94,11 @@ p {
     100%{
         opacity:1;
         transform:translateY(0)
+    }
+}
+
+@media only screen and (min-width: 993px){
+    .container {
+        width: 77% !important;
     }
 }

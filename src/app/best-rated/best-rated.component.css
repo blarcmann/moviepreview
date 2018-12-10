@@ -1,0 +1,11 @@
+.under-line {
+    border-bottom: 1px solid #20d376;
+    margin: -3px 12% 10px 62%;
+    animation: 4.90s ease-in slide-in;
+  }
+
+  @media (max-width: 600px) {
+      .under-line {
+          margin: -4px 35% 13px 20%;
+      }
+  }

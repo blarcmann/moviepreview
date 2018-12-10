@@ -1,0 +1,63 @@
+.nav-container {
+  background-color: rgb(116, 153, 61) !important;
+}
+
+.dancing-logo {
+  height: 60px;
+  margin-top: 11px;
+}
+
+.dancing-logo span {
+    position: relative;
+    top: -10px;
+    display: inline-block;
+    animation: bounce .6s ease infinite alternate;
+    font-size: 33px;
+    color: rgb(167, 164, 164);
+    /* text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .4); */
+  }
+  
+  .dancing-logo span:nth-child(2) { animation-delay: .1s; }
+  .dancing-logo span:nth-child(3) { animation-delay: .2s; }
+  .dancing-logo span:nth-child(4) { animation-delay: .3s; }
+  .dancing-logo span:nth-child(5) { animation-delay: .4s; }
+  .dancing-logo span:nth-child(6) { animation-delay: .5s; }
+  .dancing-logo span:nth-child(7) { animation-delay: .6s; }
+  .dancing-logo span:nth-child(8) { animation-delay: .7s; }
+  
+  @keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 rgb(223, 253, 178),
+                   0 2px 0 rgb(223, 253, 178),
+                   0 3px 0 #CCC,
+                   0 4px 0 rgb(223, 253, 178),
+                   0 6px 0 rgb(223, 253, 178),
+                   0 5px 0 #CCC,
+                   0 8px 0 rgb(223, 253, 178),
+                   0 7px 0 #CCC,
+                   0 9px 0 #CCC,
+                   0 50px 25px rgba(0, 0, 0, .2);
+    }
+  }
+
+  .under-line {
+    border-bottom: 1px solid #20d376;
+    margin: -3px 63% 10px 12%;
+    animation: 1.30s ease-in slide-in;
+  }
+
+  @media (max-width: 600px) {
+    .under-line {
+        margin: -4px 23% 13px 29%;
+    }
+}
