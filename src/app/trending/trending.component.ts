@@ -11,6 +11,7 @@ import { Movie } from '../Movie';
 export class TrendingComponent implements OnInit {
   @Input() trend: Movie = {};
   // @Input() index = 1;
+  display = true;
   constructor() { }
 
   ngOnInit() {
@@ -21,5 +22,13 @@ export class TrendingComponent implements OnInit {
     'background': `linear-gradient(180deg, rgba(0,0,0,0.7), transparent), url(${this.trend.backdropUrl})`,
     'background-size': 'cover'
   })
+
+  // toggleDisplay() {
+
+  // }
+
+  toggleView(trend) {
+    this.display = !this.display;
+  }
 
 }

@@ -1,28 +1,15 @@
 <div class="trending-container">
   <div class="col s12 m6 l3">
-    <!-- <div class="card sticky-action card-trends">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="" src="{{trend.backdropUrl}}">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator title-red grey-text text-darken-4">{{trend.original_title}}<i class="material-icons right">more_vert</i></span>
-        <p class="more-info">Released: {{trend.release_date}}</p>
-        <p class="more-info">Popularity: {{trend.popularity * 10000}}</p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div> -->
-
     <div class="card blue trends-card darken-1" [ngStyle]="backdropStyle()">
-      <div class="card-content white-text">
+      <div class="card-content activate-menu white-text" (click)="toggleView(trend)" [ngClass]="display ? 'block' : 'none'" >
         <span class="card-title title-red">{{trend.title}}</span>
-        <!-- <p> <i class="material-icons trend-info a">add</i></p>
-        <p> <i class="material-icons trend-info b">add</i></p> -->
-        <!-- <p> <i class="material-icons trend-info d">add</i></p> -->
         <p> <i class=" material-icons trend-info c">compare_arrows</i> {{trend.vote_count}} Vote Counts </p>
         <p class="center-align">trend rating</p>
+        <span class="date"> <i class="material-icons">camera</i> {{trend.release_date}}</span>
+      </div>
+      <div class="card-reveal" (click)="toggleView(trend)" [ngClass]="display ? 'none' : 'block'" >
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
       </div>
     </div>
 

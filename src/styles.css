@@ -4,6 +4,8 @@ html, body{
     /* background: linear-gradient(#000 10%, #333 20%, #000 30%); */
     background: rgba(0, 1, 2, 0.822);
     background-size: 100% 50px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Noto Serif TC', serif; */
 }
 app-root {
     display: flex;

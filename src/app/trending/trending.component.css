@@ -13,12 +13,60 @@
 .card.trends-card {
     height: 240px !important;
     max-height: 250px !important;
+    box-shadow: 2px 2px 11px #000000;
+}
+
+.card.trends-card:hover {
+    cursor: pointer;
+}
+
+.card .card-reveal {
+    padding: 24px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+
+.block {
+    display: block !important;
+}
+
+.none {
+    display: none !important;
+}
+
+span.date {
+    font-size: 13px;
+    color: #FFDC00;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    text-shadow: 1px 0px 2px #000000;
+}
+
+span.date i {
+    color: rgb(255, 245, 181);
+    font-size: 20px;
+    top: 5px;
+    position: relative;
+}
+
+span.date i:hover {
+    cursor: pointer;
 }
 
 .title-red {
     font-size: 17px;
     line-height: 1.66 !important;
-    text-shadow: rgb(116, 153, 61) 0px 3px 3px;
     text-align: center;
 }
 
