@@ -17,4 +17,9 @@ export class TrendingComponent implements OnInit {
 
   }
 
+  backdropStyle = () => ({
+    'background': `linear-gradient(180deg, rgba(0,0,0,0.7), transparent), url(${this.trend.backdropUrl})`,
+    'background-size': 'cover'
+  })
+
 }

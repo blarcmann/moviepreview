@@ -10,7 +10,36 @@
     }
 }
 
-.card.card-trends {
-    height: 340px !important;
-    max-height: 350px !important;
+.card.trends-card {
+    height: 240px !important;
+    max-height: 250px !important;
+}
+
+.title-red {
+    font-size: 17px;
+    line-height: 1.66 !important;
+    text-shadow: rgb(116, 153, 61) 0px 3px 3px;
+    text-align: center;
+}
+
+.trend-info {
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.trend-info.a {
+    background-color: #FF4136;
+}
+
+.trend-info.b {
+    background-color: #F012BE;
+}
+
+.trend-info.c {
+    background-color: #3D9970;
+}
+
+.trend-info.d {
+    background-color: #FFDC00;
 }

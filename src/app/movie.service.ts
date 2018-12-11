@@ -42,7 +42,8 @@ export class MovieService {
       .map(res =>
           res.results.map((result: Movie) => {
             return {
-              ...result
+              ...result,
+              backdropUrl: this.createPhotoUrl(result.backdrop_path, true),
             };
           })
         );
