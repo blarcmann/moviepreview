@@ -21,7 +21,7 @@
 }
 
 .card .card-reveal {
-    padding: 24px;
+    padding: 10px !important;
     position: absolute;
     background-color: #fff;
     width: 100%;
@@ -37,10 +37,38 @@
 
 .block {
     display: block !important;
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+.fade-title {
+    font-size: 15px;
+}
+
+.fade-overview {
+    color: #333;
+    font-size: 12px !important;
+}
+
+.close-fade {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin-left: 10px;
+    color: #FF4136;
+    text-shadow: 4px 1px 1px lightsteelblue;
+    font-size: 30px;
 }
 
 .none {
     display: none !important;
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
 }
 
 span.date {
@@ -74,6 +102,9 @@ span.date i:hover {
     border-radius: 50%;
     padding: 10px;
     font-size: 15px;
+    position: absolute;
+    top: 50%;
+    right: 3px;
 }
 
 .trend-info.a {

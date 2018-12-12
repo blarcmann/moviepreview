@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
+import { AppComponent, TruncatePipe } from './app.component';
 import { SearchComponent } from './search/search.component';
-import { EachMovieComponent, TruncatePipe } from './each-movie/each-movie.component';
+import { EachMovieComponent } from './each-movie/each-movie.component';
 import { HeaderComponent } from './header.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { FooterComponent } from './footer/footer.component';

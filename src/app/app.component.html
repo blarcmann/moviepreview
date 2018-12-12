@@ -1,6 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-fluid">
-  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!-- <div class="navbar-fixed">
     <nav class="nav-container">
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo dancing-logo center">
@@ -14,7 +25,7 @@
         </a>
       </div>
     </nav>
-  </div>
+  </div> -->
 </div>
 <div class="container">
   <app-header *ngIf="currentMovie" (startNewSearch)="startNewSearch()"></app-header>
@@ -27,8 +38,18 @@
   <div class="container">
     <div class="row">
       <div class="trending-head">
-        <h3>Trending</h3>
-        <div class="under-line"></div>
+        <svg viewBox="0 0 960 300">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">Trending!</text>
+          </symbol>
+          <g class="g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
       </div>
       <app-trending *ngFor="let trend of trendResults;" [trend]="trend"></app-trending>
     </div>
