@@ -34,13 +34,13 @@ main {
 h3 {
     margin: 1.9466666667rem 0 0 0 !important;
 }
-.search-input{
+/* .search-input{
     height: 4rem !important;
     top:15px;
     color: greenyellow !important;
     font-size: 1.2rem !important;
     padding: inherit 10px !important;
-}
+} */
 
 .page-footer{
     background-color: rgb(116, 153, 61) !important;
