@@ -7,4 +7,5 @@ export interface Movie {
     release_date?: string;
     backdropUrl?: string;
     posterUrl?: string;
+    popularity?: string;
 }
