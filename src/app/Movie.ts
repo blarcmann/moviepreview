@@ -8,4 +8,6 @@ export interface Movie {
     backdropUrl?: string;
     posterUrl?: string;
     popularity?: string;
+    vote_average?: number;
+    original_language?: string;
 }

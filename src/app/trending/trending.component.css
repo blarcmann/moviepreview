@@ -45,8 +45,8 @@
 }
 
 .card.trends-card {
-    height: 240px !important;
-    max-height: 250px !important;
+    height: 266px !important;
+    max-height: 277px !important;
     box-shadow: 2px 2px 11px #000000;
 }
 
@@ -78,7 +78,7 @@
     -ms-animation: fadeIn ease 1.5s;
 }
 .fade-title {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .fade-overview {
