@@ -25,7 +25,7 @@
 .pills {
     width: max-content;
     border-radius: 11px;
-    margin: 5px;
+    margin: 2px 5px;
     padding: 3px 7px;
     font-size: 11px;
 
@@ -84,6 +84,8 @@
 .fade-overview {
     color: #333;
     font-size: 12px !important;
+    max-height: 60%;
+    overflow-y: auto;
 }
 
 .close-fade {
@@ -145,7 +147,7 @@
 } */
 
 span.date i {
-    color: #20d376;
+    /* color: #20d376; */
     font-size: 27px;
     top: 3px;
     right: 5px;

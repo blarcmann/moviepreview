@@ -1,41 +1,38 @@
-
 <div class="container-fluid">
-    <app-search-movie class="row" *ngIf="!currentMovie"></app-search-movie>
+  <app-search-movie class="row" *ngIf="!currentMovie"></app-search-movie>
 </div>
 <div class="container">
   <app-header *ngIf="currentMovie" (startNewSearch)="startNewSearch()"></app-header>
   <main>
     <div class="container-fluid">
-      <app-movie-details class="row" *ngIf="currentMovie" [movie]="currentMovie"></app-movie-details>
+      <app-movie-details class="row each-mov-detail" *ngIf="currentMovie" [movie]="currentMovie"></app-movie-details>
     </div>
   </main>
-  <div class="container">
-    <div class="row">
-      <div class="trending-head">
-        <svg viewBox="0 0 960 300">
-          <symbol id="s-text">
-            <text text-anchor="middle" x="50%" y="80%">Trending!</text>
-          </symbol>
-          <g class="g-ants">
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-          </g>
-        </svg>
-      </div>
-      <app-trending *ngFor="let trend of trendResults;" [trend]="trend"></app-trending>
+  <div class="row" *ngIf="!currentMovie">
+    <div class="trending-head">
+      <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">Trending!</text>
+        </symbol>
+        <g class="g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
     </div>
-    <div class="row">
-      <app-best-rated></app-best-rated>
-    </div>
+    <app-trending *ngFor="let trend of trendResults;" [trend]="trend" ></app-trending>
+  </div>
+  <div class="row hide">
+    <app-best-rated></app-best-rated>
   </div>
   <app-footer></app-footer>
 </div>
 
 
-  <!-- <div class="navbar-fixed">
+<!-- <div class="navbar-fixed">
     <nav class="nav-container">
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo dancing-logo center">

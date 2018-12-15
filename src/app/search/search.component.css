@@ -5,6 +5,9 @@
 }
 
 .center-me {
-    align-self: center;
-    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95px;
+    height: 95px;
 }

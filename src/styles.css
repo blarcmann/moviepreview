@@ -12,9 +12,32 @@ app-root {
     min-height: 100vh;
     flex-direction: column;
 }
+.back-arrow {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 
+@media (min-width: 768px) {
+    .back-arrow {
+        top: 12px;
+        left: 19px;
+    }
+}
+.back-arrow  span {
+    font-size: 33px;
+    margin-bottom: 12px;
+    /* color: rgb(216, 41, 10); */
+}
+.back-arrow:hover {
+    cursor: pointer;
+}
 main {
     flex: 1 0 auto;
+}
+
+.hide {
+    display: none;
 }
 
 .movie-poster{
@@ -69,10 +92,6 @@ p {
     font-size: 14px !important;
 }
 
-input {
-    border: none !important;
-    border-bottom: 1px solid rgb(116, 153, 61) !important;
-}
 .foot-text a {
     color: rgb(223, 253, 178);
 }
@@ -81,7 +100,9 @@ input {
     color: rgb(216, 41, 10);
 }
 
-
+.nav-wrapper .input-field input[type=search] {
+    background: rgb(116, 153, 61);
+}
 
 @media (min-width: 1024px) {
     p {
