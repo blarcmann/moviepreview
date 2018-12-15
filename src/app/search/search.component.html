@@ -15,7 +15,7 @@
         <app-each-movie *ngFor="let movie of searchResults; let i = index" [movie]="movie" [index]="i" (click)="setCurrentMovie(movie)">
         </app-each-movie>
     </div>
-    <div *ngIf="!fetching && searchResults.length == 0 && search.length > 0" class="preloader-wrapper big active">
+    <div *ngIf="!fetching && searchResults.length == 0 && search.length > 0" class="preloader-wrapper center-me big active">
         <div class="spinner-layer spinner-blue">
             <div class="circle-clipper left">
                 <div class="circle"></div>

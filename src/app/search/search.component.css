@@ -3,3 +3,8 @@
     padding: 3px 7px;
     font-size: 15px;
 }
+
+.center-me {
+    align-self: center;
+    justify-content: center;
+}

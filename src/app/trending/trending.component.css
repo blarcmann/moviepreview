@@ -9,7 +9,34 @@
         margin: -4px 23% 13px 29%;
     }
 }
+.a {
+    background-color: #20d376;
+    color: #000000;
+}
+.b {
+    background-color: #FF4136;
+    color: #fff;
+}
+.c {
+    background-color: gold;
+    color: #000000;
+}
 
+.pills {
+    width: max-content;
+    border-radius: 11px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 11px;
+
+}
+
+.pills-group {
+    position: absolute;
+    bottom: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .underline {
     border-bottom: 1px solid #FF4136;
     width: 90%;
@@ -70,8 +97,8 @@
 }
 .mov-detail {
     position: absolute;
-    top: 30%;
-    left: 10px;
+    top: 35%;
+    left: 7px;
 }
 
 .mov-detail .each-detail {
@@ -107,21 +134,22 @@
     -ms-animation: fadeIn ease 1.5s;
 }
 
-span.date {
+/* span.date {
     font-size: 13px;
-    color: #FFDC00;
+    color: #20d376;
     text-transform: uppercase;
     position: absolute;
     top: 5px;
-    right: 5px;
+    
     text-shadow: 1px 0px 2px #000000;
-}
+} */
 
 span.date i {
-    color: rgb(255, 245, 181);
-    font-size: 20px;
-    top: 5px;
-    position: relative;
+    color: #20d376;
+    font-size: 27px;
+    top: 3px;
+    right: 5px;
+    position: absolute;
 }
 
 span.date i:hover {

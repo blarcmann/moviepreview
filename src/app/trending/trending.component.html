@@ -2,10 +2,10 @@
   <div class="col s12 m6 l3">
     <div class="card blue trends-card darken-1" [ngStyle]="backdropStyle()">
       <div class="card-content activate-menu white-text" (click)="toggleView(trend)" [ngClass]="display ? 'block' : 'none'" >
-        <span class="date"> <i class="material-icons">camera</i> {{trend.release_date}}</span>
+        <span class="date"> <i class="material-icons">trending_flat</i></span>
         <div class="mov-detail">
-          <p class="each-detail"> Popularity <span>{{trend.popularity}}</span></p>
-          <p class="detail-date"> <span>{{trend.release_date}}</span></p>
+          <p class="each-detail"> Avg. rating <span>{{trend.vote_average}}</span></p>
+          <p class="detail-date"> <span></span></p>
         </div>
         <span class="card-title title-red">{{trend.title}}</span>
       </div>
@@ -13,7 +13,13 @@
         <span class="card-title grey-text fade-title text-darken-4">{{trend.title}}'s Overview
           <div class="underline"></div>
           <i class="material-icons close-fade right">close</i></span>
-        <p class="fade-overview">{{trend.overview | truncate: [40]}}</p>
+        <p class="fade-overview" *ngIf="trend.overview !== ''">{{trend.overview | truncate: [27]}}</p>
+        <p class="fade-overview" *ngIf="!trend.overview" >***********</p>
+        <div class="pills-group">
+          <span class="pills a">{{trend.release_date}}</span>
+          <span class="pills b">kjjkerrererr</span>
+          <span class="pills c">rer</span>          
+      </div>
       </div>
     </div>
 
