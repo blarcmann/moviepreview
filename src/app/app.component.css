@@ -107,3 +107,40 @@ svg {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
+
+.specialtext {
+  margin-bottom: 13px;
+  /* position: absolute;
+  left: 50%;
+  top: 50%; */
+  /* -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); */
+}
+
+#text {
+  font-size: 150px;
+  font-family: Righteous;
+}
+
+#fill {
+  -webkit-animation: shift 5s linear infinite;
+          animation: shift 5s linear infinite;
+}
+
+@-webkit-keyframes shift {
+  0% {
+    x: 0;
+  }
+  100% {
+    x: -2000;
+  }
+}
+
+@keyframes shift {
+  0% {
+    x: 0;
+  }
+  100% {
+    x: -2000;
+  }
+}
